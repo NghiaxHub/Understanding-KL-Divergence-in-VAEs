@@ -1,6 +1,6 @@
 # Kullback-Leibler Divergence in VAEs
 ## 1. Target
-Given the dataset $D$, with $p^*$ is the real distribution of $D$, where $x$ is sampled from the dataset $D$: $x \sim D$.<br>
+Given the dataset $D$, with $p^\*$ is the real distribution of $D$, where $x$ is sampled from the dataset $D$: $x \sim D$.<br>
 We want to build some probabilistic model $p$ parameterized by $\theta$ that will approximate $p^*$ as closely as possible.
 $$p^*(x) \approx p_{\theta}(x)$$
 where $p_{\theta}(x)$ is called the likelihood of the data $x$ given the model parameters $\theta$.<br>
