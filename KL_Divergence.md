@@ -98,15 +98,11 @@ $$
 
 By applying definition of the expected value for a distribution, we have:
 
-$$
-\begin{aligned}
-D_{KL}(q_{\phi} || p_{\theta}) &= \mathbb{E}_{q_{\phi}}\left[\log\left(\frac{q_{\phi}}{p_{\theta}}\right)\right] \\
-&= \mathbb{E}_{q_{\phi}}\left[\log q_{\phi}\right] - \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}\right] \\
-&= \mathbb{E}_{q_{\phi}}\left[\log q_{\phi}\right] - \mathbb{E}_{q_{\phi}}\left[\log \left( \frac{p_{\theta}(z, x)}{p_{\theta}(x)} \right)\right] \\
-&= \mathbb{E}_{q_{\phi}}\left[\log q_{\phi}\right] - \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}(z, x)\right] + \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}(x)\right] \\
-&= \log p_{\theta}(x) - \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}(z,x) - \log q_{\phi}\right]
-\end{aligned}
-$$
+$$D_{KL}(q_{\phi} || p_{\theta}) = \mathbb{E}_{q_{\phi}}\left[\log\left(\frac{q_{\phi}}{p_{\theta}}\right)\right] $$
+$$= \mathbb{E}_{q_{\phi}}\left[\log q_{\phi}\right] - \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}\right]$$
+$$= \mathbb{E}_{q_{\phi}}\left[\log q_{\phi}\right] - \mathbb{E}_{q_{\phi}}\left[\log \left( \frac{p_{\theta}(z, x)}{p_{\theta}(x)} \right)\right]$$
+$$= \mathbb{E}_{q_{\phi}}\left[\log q_{\phi}\right] - \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}(z, x)\right] + \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}(x)\right]$$
+$$= \log p_{\theta}(x) - \mathbb{E}_{q_{\phi}}\left[\log p_{\theta}(z,x) - \log q_{\phi}\right]$$
 
 In the last line, the first term does not have the expectation sign since $p_{\theta}(x)$ is independent of $z$.
 
